@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFAE0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="97dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="say hello to you."
+        android:textColor="#47321E"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textHello"
+        app:layout_constraintStart_toStartOf="@+id/desc"
+        app:layout_constraintTop_toBottomOf="@+id/desc" />
+
+    <TextView
+        android:id="@+id/titleHello2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="HelloApp!"
+        android:textColor="#90653D"
+        android:textColorLink="#5161C7"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/desc"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="119dp"
+        android:background="#FEFAE0"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#47321E"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/inData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inData"
+        android:layout_width="341dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Your Name"
+        android:singleLine="true"
+        android:textColor="#47321E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHello" />
+
+    <Button
+        android:id="@+id/btnHello"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="341dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="276dp"
+        android:backgroundTint="#D5BDAF"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Say Hello! 👋🏽"
+        android:textColor="#47321E"
+        android:textColorLink="#FF4E88"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/dhinda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inData" />
+
+    <TextView
+        android:id="@+id/dhinda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="53dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Dhinda Tsamara Shalsabilla - F1D022005"
+        android:textColor="#47321E"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHello" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Enter your name and it will automatically"
+        android:textColor="#47321E"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/desc2"
+        app:layout_constraintStart_toStartOf="@+id/titleHello2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
